@@ -22,3 +22,9 @@ Successful URL responses should have a 200 code. Ensure that you include error c
 ## License
 
 [License](LICENSE.txt)
+
+
+## URL for webapp
+Success Case (status 200): http://full-stack-apps-aws-dev-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://www.princeton.edu/sites/default/files/styles/scale_1440/public/images/2022/02/KOA_Nassau_2697x1517.jpg
+Fail Case (status 400): http://full-stack-apps-aws-dev-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=
+Fail Case (status 500): http://full-stack-apps-aws-dev-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=h
