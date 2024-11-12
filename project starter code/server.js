@@ -44,7 +44,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
       // 3. send the resulting file in the response
       res.status(200).sendFile(image, () => {
         // 4. deletes any files on the server on finish of the response
-        deleteLocalFiles(image);
+        deleteLocalFiles([image]);
       })
     } catch (err) {
       res.status(500).json({message: 'error with server.'})
